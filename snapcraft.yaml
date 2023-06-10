@@ -1,4 +1,4 @@
-name: thefuck
+name: theduck
 version: stable
 version-script: git -C parts/thefuck/build describe --abbrev=0 --tags
 summary: Magnificent app which corrects your previous console command.
@@ -11,15 +11,15 @@ confinement: classic
 
 apps:
   thefuck:
-    command: bin/thefuck
+    command: bin/theduck
     environment:
         PYTHONIOENCODING: utf-8
-  fuck:
-    command: bin/fuck
+  duck:
+    command: bin/duck
     environment:
         PYTHONIOENCODING: utf-8
 
 parts:
-  thefuck:
-    source: https://github.com/nvbn/thefuck.git
+  theduck:
+    source: https://github.com/avinashsvinu/theduck.git
     plugin: python
